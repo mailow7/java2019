@@ -5,8 +5,8 @@ import ru.mailow.hwTrading.typesTrade.COMMODITY_SPOT;
 import ru.mailow.hwTrading.typesTrade.FX_SPOT;
 import ru.mailow.hwTrading.typesTrade.IR_SWAP;
 
-public class genTrade {
-    public static Trade create(String tradeType, int price){
+public class createTradeSwitch {
+    public static Trade createTrade(String tradeType, int price){
         switch (tradeType) {
             case "BOND":
                 return new BOND(price);

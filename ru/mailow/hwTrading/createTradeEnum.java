@@ -6,7 +6,7 @@ import ru.mailow.hwTrading.typesTrade.COMMODITY_SPOT;
 import ru.mailow.hwTrading.typesTrade.FX_SPOT;
 import ru.mailow.hwTrading.typesTrade.IR_SWAP;
 
-public enum enumirateTrade {
+public enum createTradeEnum {
     BOND{
         @Override
         public Trade createTrade(int price){

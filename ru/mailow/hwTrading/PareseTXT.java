@@ -29,9 +29,9 @@ public class PareseTXT {
             }
             fr.close();
             if (byEnum) {
-                return enumirateTrade.valueOf(tradeType).createTrade(price);
+                return createTradeEnum.valueOf(tradeType).createTrade(price);
             } else {
-                return genTrade.create(tradeType, price);
+                return createTradeSwitch.createTrade(tradeType, price);
             }
         } catch (IOException e) {
             e.printStackTrace();
